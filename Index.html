@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textarea y Labels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <h2>
+            Formulario De Contacto
+        </h2>
+        <fieldset>
+            <legend>Informacio Basica</legend>
+            <div class="form_input">
+                <label>Nombre Completo
+                    <input type="text" placeholder="John Doe">
+                </label>
+            </div>
+            <div class="form_input">
+                <label>Email
+                    <input type="email" placeholder="ejemplo@gmail.com">
+                </label>
+            </div>
+            <div class="form_input">
+                <label>Contraseña
+                    <input type="password" placeholder="1234">
+                </label>
+            </div>
+        </fieldset>
+        <!--Select y Option-->
+        <div class="form_input">
+            <label>Tipo De Usuario
+                <select>
+                    <option value="user1">Usuario</option>
+                    <option value="user2">Empresa</option>
+                    <option value="user3">Estudiante</option>
+                </select>
+            </label>
+        </div>
+        <!--Datalist y Option-->
+        <div class="form_input">
+            <label>Referente
+                <input list="referente">
+                <datalist id="referente">
+                    <option value="user1"></option>
+                    <option value="user2"></option>
+                    <option value="user3"></option>
+                </datalist>
+            </label>
+        </div>
+        <!--Textarea-->
+        <div class="form_input">
+            <label>Mensaje
+                <textarea rows="8" placeholder="Deja tu mensaje..."></textarea>
+            </label>
+        </div>
+        <div class="form_input">
+            <label>Acepto Los Terminos Y Condiciones
+                <input type="checkbox" class="checkbox">
+            </label>
+        </div>
+    </form>
+</body>
+</html>
